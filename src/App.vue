@@ -1,9 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/create">Create</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -26,5 +26,20 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+button {
+  padding: 10px;
+  margin: 0px 10px;
+  background: #4ea8de;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #48bfe3;
+  cursor: pointer;
 }
 </style>
