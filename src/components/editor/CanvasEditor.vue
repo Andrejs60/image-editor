@@ -107,6 +107,7 @@ export default {
 <style>
 #myCanvas {
   border: 1px solid #000;
+  background: #fff;
   /* cursor: crosshair; */
 }
 </style>

@@ -4,7 +4,7 @@
       <ImagePreview :image="image" />
     </div>
   </div>
-  <p v-else>No images available...</p>
+  <p v-else>No images available... (must also run "npm run db")</p>
 </template>
 
 <script>
@@ -31,4 +31,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.row {
+  background: #0d1b2a;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+p {
+  margin: 20px;
+}
+</style>

@@ -3,9 +3,6 @@
     <img :src="image.data" class="card-img-top" :alt="image.name" />
     <div class="card-body">
       <h5 class="card-title">{{ image.name }}</h5>
-      <p class="card-text">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </p>
     </div>
   </div>
 </template>
@@ -21,7 +18,18 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  background: #1b263b;
+  border-radius: 0px;
+}
+
 img {
-  /* border: 1px solid #000; */
+  background: #fff;
+  border-radius: 0px;
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
 }
 </style>

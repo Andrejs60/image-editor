@@ -25,6 +25,13 @@
           </li>
         </ul>
       </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-button" href="#"
+            ><i class="bi bi-person-fill"></i> Login / Register</a
+          >
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
@@ -72,5 +79,20 @@ nav a {
 nav a.router-link-exact-active {
   background: #e0e1dd;
   color: #000;
+}
+
+.nav-button {
+  padding: 8px;
+  margin: 0px 4px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  color: #0d1b2a;
+  background: #fff;
 }
 </style>
