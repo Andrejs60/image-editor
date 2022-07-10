@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Image Drawer</h1>
+    <h1>Image Editor</h1>
     <button @click="gotoCreate">Create new image</button>
     <h2>Saved Images</h2>
     <ImagePreviewGrid />

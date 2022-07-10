@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-md">
-      <router-link class="navbar-brand logo" exact-active-class="" to="/">{{
-        title
-      }}</router-link>
+      <router-link class="navbar-brand logo" exact-active-class="" to="/"
+        ><i class="bi bi-easel"></i> Editor</router-link
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -41,8 +41,9 @@ export default {
 
 <style scoped>
 .logo {
-  margin-right: 40px;
+  margin-right: 60px;
   color: white;
+  font-size: 23px;
 }
 
 .navbar {
