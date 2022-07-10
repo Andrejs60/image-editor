@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import CanvasEditor from "../components/CanvasEditor.vue";
+import CanvasEditor from "../components/editor/CanvasEditor.vue";
 export default {
   props: ["width", "height", "imageName"],
   components: { CanvasEditor },
