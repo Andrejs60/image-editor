@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     async fetchImages() {
-      const { data } = await axios.get("http://localhost:3000/images");
+      const { data } = await axios.get("http://localhost:8000/api/images");
       this.images = data;
     },
   },

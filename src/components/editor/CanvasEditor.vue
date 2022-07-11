@@ -74,19 +74,24 @@ export default {
       this.canvasContext.fill();
     },
     async handleSave() {
-      const image = this.$refs.canvas
-        .toDataURL("image/png")
-        .replace("image/png", "image/octet-stream");
-      // TODO: move to vuex
-      try {
-        const { data } = await axios.post("http://localhost:3000/images", {
-          data: image,
-          name: this.imageName,
-        });
-      } catch (error) {
-        console.log(error);
-      }
-      // TODO: display notification
+      this.$refs.canvas.toBlob(async (image) => {
+        const formData = new FormData();
+        formData.append("name", this.imageName);
+        formData.append("image", image);
+        try {
+          const { data } = await axios.post(
+            "http://localhost:8000/api/images",
+            formData,
+            {
+              headers: { "Content-Type": "multipart/form-data" },
+            }
+          );
+          console.log(data);
+        } catch (error) {
+          console.log(error);
+        }
+        // TODO: display notification
+      });
     },
     handleDownload() {
       const image = this.$refs.canvas
