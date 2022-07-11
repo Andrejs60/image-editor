@@ -4,7 +4,7 @@
       <ImagePreview :image="image" />
     </div>
   </div>
-  <p v-else>No images available... (must also run "npm run db")</p>
+  <p v-else>No images available...</p>
 </template>
 
 <script>
